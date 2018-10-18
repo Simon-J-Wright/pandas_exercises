@@ -1,0 +1,39 @@
+Import Data:
+
+
+
+
+---------------------
+
+Overview of data:
+
+#View first n rows of data, defaults to 10
+DataFrame.head(n)
+
+#Number of rows
+DataFrame.shape[0]
+
+#Number of columns
+DataFrame.shape[1]
+
+#Number of columns
+DataFrame.columns
+
+----------------------
+
+#Most frequent occuring value in a column
+DataFrame.column_name.mode()
+
+
+
+---------------------
+Grouping
+
+#Group by one column, sum all others
+c = DataFrame.groupby('grouping_column')
+c = c.sum()
+c = c.sort_values(['quantity'], ascending=False)
+c.head(1)
+
+
+
